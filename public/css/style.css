@@ -1,0 +1,270 @@
+.padding {
+    padding-top: 50px;
+}
+
+#chat {
+    padding-bottom: 55px;
+}
+
+h1 {
+    color: #397249;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+h3 {
+    color: #628b61;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+h4 {
+    color: #88a060;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#logo {
+    width: 150px;
+    margin: 4%;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 15px;
+}
+
+iframe {
+    margin-bottom: 3%;
+}
+
+#index,
+#infoLocations,
+.divLocation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+    color: #628b61;
+}
+
+iframe {
+    height: 50%;
+    width: 70%;
+    border: 0;
+}
+
+#logButton, #makePost {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+}
+
+#login, #logout, #textInput, #createPost {
+    margin: 2%;
+}
+
+#createPost {
+    padding: 1%;
+    width: 75px;
+}
+
+#posts {
+}
+
+.textClass {
+    margin: 2%;
+    color: black;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 5px;
+    background-color: #c2dd95;
+}
+
+.messageRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 35%;
+}
+
+.messageLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 35%;
+}
+
+#nameId {
+    font-weight: bold;
+}
+
+#textBodyId {
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.textBodyRight {
+    text-align: right;
+}
+
+.textBodyLeft {
+    text-align: left;
+}
+
+/* BOTONES DEL INDEX */
+
+.buttonsMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+#nextgamesButton,
+#locationsButton,
+#resultsButton,
+#chatsButton {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+    width: 85%;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #000000b0;
+}
+
+#nextgamesButton {
+    background-color: #397249;
+    border-color: #397249;
+}
+
+#locationsButton {
+    background-color: #628b61;
+    border-color: #628b61;
+}
+
+#resultsButton {
+    background-color: #88a060;
+    border-color: #88a060;
+}
+
+#chatsButton {
+    background-color: #a7ce66;
+    border-color: #a7ce66;
+}
+
+/* BOTONES NAVBAR */
+
+.navbar {
+    margin: 0%;
+}
+
+#navLogo {
+    width: 60px;
+    padding-right: 10%;
+}
+
+.smallButton,
+.back {
+    margin: 2%;
+    color: white;
+    padding: 1%;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #000000b0;
+    background-color: #2c6700;
+    border-color: #2c6700;
+}
+
+#buttons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+}
+
+.hidden {
+    display: none;
+}
+
+/* PANTALLA POSICIÓN HORIZONTAL */
+
+@media only screen and (orientation: landscape) {
+    .padding {
+        padding-top: 60px;
+    }
+    #chat {
+        padding-bottom: 60px;
+    }
+    #logo {
+        position: absolute;
+        left: 7%;
+        top: 25%;
+        margin: 5%;
+    }
+    #navLogo {
+        width: 60px;
+        padding-right: 10%;
+    }
+    h1 {
+        margin-top: 2%;
+        margin-bottom: 3%;
+        font-size: 30px
+    }
+    p {
+        margin-bottom: 1%;
+    }
+    .smallButton {
+        margin: 2%;
+        width: 20%;
+    }
+    .buttonsMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #nextgamesButton,
+    #locationsButton,
+    #resultsButton,
+    #chatsButton {
+        margin-bottom: 2%;
+        width: 50%;
+    }
+    #infoResults {
+    }
+    .divResults {
+        width: 50%;
+    }
+
+    #infoLocations,
+    #infoGamesMonth,
+    #infoResults {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .divLocation {
+        width: 50%;
+    }
+}

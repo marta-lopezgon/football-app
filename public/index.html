@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" sizes="196x196" href="css/nysl_logo_web.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Northside Youth Soccer League</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav data-page class="navbar navbar-default navbar-fixed-top hidden" id="buttonsId">
+        <div class="container" id="buttons">
+            <div>
+                <img id="navLogo" alt="Brand" src="css/nysl_logo_web.png">
+            </div>
+            <button data-click="nextgame" data-button class="btn btn-default navbar-btn smallButton" id="gameButton" type="button">Games</button>
+            <button data-click="location" data-button class="btn btn-default navbar-btn smallButton" id="locationButton" type="button">Locations</button>
+            <button data-click="results" data-button class="btn btn-default navbar-btn smallButton" id="resultButton" type="button">Results</button>
+            <button data-click="chat" data-button class="btn btn-default navbar-btn smallButton" id="chatButton" type="button">Chat</button>
+<!--                        <button data-click="index" data-button class="btn btn-default navbar-btn smallButton back" id="backButton" type="button">Menu</button>-->
+        </div>
+    </nav>
+
+    <!-- INDEX -->
+    <div id="index" data-page>
+        <h1>Welcome to Northside Youth Soccer League</h1>
+        <img id="logo" src="css/nysl_logo_web.png">
+        <div class="buttonsMenu">
+            <button data-click="nextgame" data-button id="nextgamesButton" type="button">Next games</button>
+            <button data-click="location" data-button id="locationsButton" type="button">Locations</button>
+            <button data-click="results" data-button id="resultsButton" type="button">Game results</button>
+            <button data-click="chat" data-button id="chatsButton" type="button">Chat</button>
+        </div>
+    </div>
+
+    <!-- NEXT GAME -->
+    <div data-page id="nextgame" class="hidden padding">
+        <h1>Next games</h1>
+        <div class=" container">
+            <div id="infoGamesMonth">
+                <div id="infoGamesFirstMonth"></div>
+                <div id="infoGamesSecondMonth"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOCATION -->
+    <div data-page id="location" class="hidden padding">
+        <h1>Locations</h1>
+        <h3>Where to go?</h3>
+        <div id="infoLocations"></div>
+    </div>
+
+    <!-- RESULTS -->
+    <div data-page id="results" class="hidden padding">
+        <h1>Results</h1>
+        <div class=" container">
+            <h3>Last month</h3>
+            <div id="infoResults">
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT -->
+    <div data-page id="chat" class="hidden padding">
+        <h1>Chat</h1>
+        <h3>Talk with your NYSL friends</h3>
+        <div id="infoChat">
+            <div id="logButton">
+                <button id="login">Login</button>
+                <button id="logout">Logout</button>
+            </div>
+            <div id="posts">
+            </div>
+            <div class="navbar-default navbar-fixed-bottom" id="makePost">
+                <input class="form-control" id="textInput" type="text" placeholder="Your message...">
+                <button id="createPost">Send it</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDn9RpUEFwx8H-qYo-mJz-iv3JkatjrCw4",
+            authDomain: "northside-youth-soccer-league.firebaseapp.com",
+            databaseURL: "https://northside-youth-soccer-league.firebaseio.com",
+            projectId: "northside-youth-soccer-league",
+            storageBucket: "northside-youth-soccer-league.appspot.com",
+            messagingSenderId: "150012191154"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
