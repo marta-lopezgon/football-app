@@ -1,6 +1,3 @@
-/* eslint-env browser */
-/* eslint "no-console": "off"  */
-/* global $ */
 
 /*TO DO / TO FIX:
 -hide log-in when the user is conected and hide log-out when the user is not conected
